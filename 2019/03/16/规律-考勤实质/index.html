@@ -400,7 +400,7 @@
 </li>
 </ul>
 <p>要从这些个维度出发，去进行功能的设计。以是否本人为例，首先账号密码也是一种隐藏的判定。假如加入虹膜打卡的诉求、乃至采血DNA验证的诉求，都在范畴内。这些判定策略应该是可以自由组合，而不是单一判定的。</p>
-<h2 id="打卡规划"><a href="#打卡规划" class="headerlink" title="打卡规划"></a>打卡规划</h2><p>以打卡功能为例出发，讲讲规划思路。</p>
+<h1 id="打卡规划"><a href="#打卡规划" class="headerlink" title="打卡规划"></a>打卡规划</h1><p>以打卡功能为例出发，讲讲规划思路。</p>
 <p><img src="http://i.chanpin100.com/156749014714972774" alt="img"></p>
 <p>首先，要有触点，能让用户进行打卡。这个触点没有严格要求，APP、小程序、Web都行。打开页面的时候，需要将帐号信息给到规则解释器。解释器根据帐号信息，找到对应的考勤规则进行计算。计算得到的打卡规则给到考勤打卡页面，进行UI渲染、检测特征和约束。打卡和服务器有个交互，打卡成功后服务器应该返回打卡时间和状态。 </p>
 
@@ -666,7 +666,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             contentSelector: '#articleContent',
             headingsOffset: -($(window).height() * 0.4 - 45),
             // headingsOffset: -205,
-            headingSelector: 'h1,h2, h3, h4'
+            headingSelector: 'h1, h2, h3, h4'
         });
 
         // modify the toc link href to support Chinese.
@@ -678,7 +678,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
         // modify the heading title id to support Chinese.
         i = 0;
-        $('#articleContent').children('h1,h2, h3, h4').each(function () {
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
             $(this).attr('id', tocHeading + (++i));
         });
 
@@ -770,51 +770,6 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             </span>
             
             <br>
-            
-            <span id="sitetime">载入运行时间...</span>
-            <script>
-                function siteTime() {
-                    window.setTimeout("siteTime()", 1000);
-                    var seconds = 1000;
-                    var minutes = seconds * 60;
-                    var hours = minutes * 60;
-                    var days = hours * 24;
-                    var years = days * 365;
-                    var today = new Date();
-                    var startYear = "2019";
-                    var startMonth = "10# 月份";
-                    var startDate = "15";
-                    var startHour = "0";
-                    var startMinute = "0";
-                    var startSecond = "0";
-                    var todayYear = today.getFullYear();
-                    var todayMonth = today.getMonth() + 1;
-                    var todayDate = today.getDate();
-                    var todayHour = today.getHours();
-                    var todayMinute = today.getMinutes();
-                    var todaySecond = today.getSeconds();
-                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
-                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
-                    var diff = t2 - t1;
-                    var diffYears = Math.floor(diff / years);
-                    var diffDays = Math.floor((diff / days) - diffYears * 365);
-                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
-                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
-                        minutes);
-                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
-                        diffMinutes * minutes) / seconds);
-                    if (startYear == todayYear) {
-                        document.getElementById("year").innerHTML = todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
-                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
-                    } else {
-                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
-                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
-                    }
-                }
-                setInterval(siteTime, 1000);
-            </script>
             
             <br>
             
