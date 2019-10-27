@@ -4,11 +4,19 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="规律--考勤实质, 道·术">
-    <meta name="description" content="前面这么多场景，很多时候产品人员选择不断堆砌功能。如果观察到了考勤的本质，就不会一直在救火。
-竞品分析在知道有考勤模块的时候，就应该进行同业竞品分析，收集更全的诉求。以今目标为例，其考勤规则覆盖了上面讲的大部分：
+    <meta name="keywords" content="业务建模--建模工作流与UML, 道·术">
+    <meta name="description" content="本文为《软件方法-业务建模和需求》的读后感系列，可在线试读
+工作流定义软件工程中阶段中的的计划、需求分析和设计阶段，都需要进行建模：
 
-考勤规则分为两类，按周循">
+
+
+工作流
+描述
+
+
+
+业务建模（严格来说叫组织建模）
+•组织内部各系统协作•组织引进一个软件系统，和招">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +24,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>规律--考勤实质 | 道·术</title>
+    <title>业务建模--建模工作流与UML | 道·术</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -200,13 +208,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/apartment-architecture-black-and-white-157811.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/diagram-flowchart-hand-1181311.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        规律--考勤实质
+                        业务建模--建模工作流与UML
                     </div>
                 </div>
             </div>
@@ -318,12 +326,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/有效思考/">
-                                <span class="chip bg-color">有效思考</span>
-                            </a>
-                        
-                            <a href="/tags/考勤/">
-                                <span class="chip bg-color">考勤</span>
+                            <a href="/tags/业务建模/">
+                                <span class="chip bg-color">业务建模</span>
                             </a>
                         
                     </div>
@@ -334,8 +338,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/通用知识/" class="post-category">
-                                通用知识
+                            <a href="/categories/需求分析/" class="post-category">
+                                需求分析
                             </a>
                         
                     </div>
@@ -346,21 +350,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-03-16
+                    2019-04-23
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        631
+                        2k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        2 分
+                        6 分
                     </div>
                     
                 
@@ -376,33 +380,140 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>前面这么多场景，很多时候产品人员选择不断堆砌功能。如果观察到了考勤的本质，就不会一直在救火。</p>
-<h1 id="竞品分析"><a href="#竞品分析" class="headerlink" title="竞品分析"></a>竞品分析</h1><p>在知道有考勤模块的时候，就应该进行同业竞品分析，收集更全的诉求。以今目标为例，其考勤规则覆盖了上面讲的大部分：</p>
+                <p>本文为《软件方法-业务建模和需求》的读后感系列，可在线<a href="http://www.umlchina.com/book/softmeth_01.htm" target="_blank" rel="noopener">试读</a></p>
+<h1 id="工作流"><a href="#工作流" class="headerlink" title="工作流"></a>工作流</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>软件工程中阶段中的的计划、需求分析和设计阶段，都需要进行建模：</p>
+<table>
+<thead>
+<tr>
+<th>工作流</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>业务建模（严格来说叫组织建模）</td>
+<td>•组织内部各系统协作<br>•组织引进一个软件系统，和招聘一批新员工没有本质区别</td>
+</tr>
+<tr>
+<td>需求</td>
+<td>•描述为了解决组织的问题，系统必须具有的表现——功能和性能<br>•从“卖”的角度思考哪些是涉众在意的、不能改变的契约，哪些不是，严防“做”污染“卖”</td>
+</tr>
+<tr>
+<td>分析</td>
+<td>•提炼为了满足功能需求，系统需要封装的核心领域机制<br>•可运行的系统需要封装各个领域的知识，其中只有一个领域（核心域）的知识是系统能在市场上生存的理由</td>
+</tr>
+<tr>
+<td>设计</td>
+<td>•为了满足质量需求和设计约束，核心领域机制如何映射到选定平台上实现。</td>
+</tr>
+</tbody></table>
+<h2 id="误解"><a href="#误解" class="headerlink" title="误解"></a>误解</h2><p>软件开发人员如果对以上工作流没有概念，就会把这些工作通通称为“设计”或者“文档”，产生以下误解：</p>
 <ol>
-<li>考勤规则分为两类，按周循环排班和无规律排班，还可以根据国家法定节假日自动调整。也支持定点考勤（设置考勤范围）。支持考勤机设备，通过人脸或指纹认证（IOT）；</li>
-<li>表表齐全，打卡明细报表，按天的汇总报表，按月的统计报表；</li>
-<li>兼容请假、消缺卡等情况。</li>
+<li>例如问开发人员在做什么，回答“我在做设计”、“我在写文档”，其实他的大脑可能正在思考组织的流程（业务建模），或者在思考系统有什么功能性能（需求），或者在思考系统要包含的领域概念之间的关系（分析），但他通通回答成“在做设计”、“在写文档”</li>
+<li>又有牛人认为“代码就是设计”。本来“设计”在他脑子里就是“代码以外的东西”，这么一推导，不就变成了：代码就是一切？</li>
 </ol>
-<p>根据上诉的信息，我认为考勤的本质诉求就是确认人在。用各种特性，辅助确认是本人在岗。因为只有人在岗，才能有可能开展工作。即便此时没有业务办理，对外也是企业的形象。前台人一直是空的，相信各位都觉得很奇怪。在此基础上，兼容各种异常情况（请假、调休等），进行灵活的审批处理。一般来说，考勤会影响到工资的发放。所以需要有统计类报表支撑月末回顾，快速定位问题。</p>
-<p>所以，考勤模块应该具备以下几类能力：</p>
+<blockquote>
+<p>把工件简单分割为代码和文档（或设计），背后还隐含着这样的误解：认为模型（文档）只不过是源代码的另一种比较概要或比较形象的表现形式。</p>
+</blockquote>
+<h2 id="边界"><a href="#边界" class="headerlink" title="边界"></a>边界</h2><blockquote>
+<p>不同工作流产出的工件之间的区别不在于形式，而在于内容，也就是思考的边界</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/%E5%BB%BA%E6%A8%A1%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%80%9D%E8%80%83%E8%BE%B9%E7%95%8C.jpg" alt="建模工作流思考边界"></p>
+<h1 id="UML建模"><a href="#UML建模" class="headerlink" title="UML建模"></a>UML建模</h1><blockquote>
+<p>建模不一定非要用UML，也可以用文本或其他自造符号来表达。每个项目中，团队一定会思考和表达建模思想，只是可能无意识、不严肃的做。</p>
+</blockquote>
+<p><strong>UML</strong>全称Unified Modeling Language，翻译过来叫做统一建模语言，是非专利的第三代建模和规约语言。</p>
+<h2 id="为何钟爱UML"><a href="#为何钟爱UML" class="headerlink" title="为何钟爱UML"></a>为何钟爱UML</h2><p>大家看看有没有遇到这种情况：开会讨论问题，某些人就是白板手绘草图，“来，我给大家讲讲”。我感觉这种特别常见，基本是画流程图和活动图、时序图的混合体，以及ER图、类图糅杂砸一起。</p>
+<blockquote>
+<p>这样的做法有巨大的“优点”：怎么画都是对的，关于这个草图的解释权归“我”所有。同事不好批评“我”，项目要依赖于“我”头脑中的隐式知识——要是“我”不“给大家讲讲”，大家就玩不转了。这样，“我”在团队里的地位就提高了。上面这种现象，在有一定资历、但又不对项目的成败承担首要责任的“高手”身上表现更明显。</p>
+</blockquote>
+<blockquote>
+<p>这种做法的本质是想通过形式上的丑陋来遮掩内容上的丑陋。</p>
+</blockquote>
+<blockquote>
+<p>掌握统一的建模语言之后，开发团队在基本共识上沟通，会大大提高沟通的效率和深度，有意无意遮掩的脓包也会强制露出。开发人员如果习惯于画“草图”，用“模块”、“特性”等词汇含糊不清地表达思想，在严谨建模思维的追问之下，往往会千疮百孔，暴露许多之前没有想到的问题。</p>
+</blockquote>
+<p>作者特意提到：</p>
+<blockquote>
+<p>使用UML沟通仅限于软件组织内部，UML模型不是用来和涉众沟通的！</p>
+</blockquote>
+<p>跟客户沟通，还是Visio那种流程图、泳道图合适。跟客户谈业务流程，这种形式更合适。</p>
+<h2 id="建模UML图"><a href="#建模UML图" class="headerlink" title="建模UML图"></a>建模UML图</h2><p>UML2.5中，已经有14种图：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/1571928703497.png" alt="UML图形"></p>
+<p>不是所有图都要在建模工作流中使用，下面是建模工作流推荐的UML图：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%8E%A8%E8%8D%90%E5%9B%BE.png" alt="工作流推荐图"></p>
+<p>可选和推荐的建模元素用法（●：优先使用，√：可以使用 ）</p>
+<p>这里简单介绍下使用的UML图形</p>
+<h2 id="用例图"><a href="#用例图" class="headerlink" title="用例图"></a>用例图</h2><blockquote>
+<p>简单来说，用例图的目的如下：</p>
 <ul>
-<li><p>是否本人</p>
+<li>用例图用来收集系统的要求</li>
+<li>用例图用于获取系统的外观图</li>
+<li>用例图识别外部和内部因素影响系统</li>
+<li>用例图显示要求之间的相互作用是参与者。</li>
+</ul>
+</blockquote>
+<p>下面是一个示例用例图，代表订单管理系统。因此，如果我们看看图，那么我们会发现三个用例（订单，特殊订单和正常订单）和一个参与者：顾客。</p>
+<p><img src="https://atts.w3cschool.cn/attachments/image/20170824/1503571564460760.png" alt="订单用例图"></p>
+<p>SpecialOrder 和<em>NormalOrder</em> 从订单使用情况扩展。因此，他们扩展了关系。另外很重要的一点是确定系统边界，这是图中所示。参与者是客户以外的系统，因为它是系统的外部用户。</p>
+<p>再举一个包含关系的例子：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/%E7%94%A8%E4%BE%8B%E5%9B%BE_%E5%8C%85%E5%90%AB.png" alt="用例图1_包含"></p>
+<p>包含关系描述的是一个用例需要某种功能，而该功能被另外一个用例定义，那么在用例的执行过程中，就可以调用已经定义好的用例</p>
+<h2 id="类图"><a href="#类图" class="headerlink" title="类图"></a>类图</h2><blockquote>
+<p>类图可以用来：描述系统的静态视图。显示静态视图中的元素之间的协作。由系统执行的功能的描述。构建软件应用面向对象的语言。</p>
+</blockquote>
+<p>举个例子：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/%E7%B1%BB%E5%9B%BE.jpg" alt="类图"></p>
+<ul>
+<li><p>车的类图结构为&lt;<abstract>&gt;，表示车是一个抽象类；</abstract></p>
 </li>
-<li><p>是否在岗</p>
+<li><p>它有两个继承类：小汽车和自行车；它们之间的关系为实现关系，使用带空心箭头的虚线表示；</p>
 </li>
-<li><p>是否准时</p>
+<li><p>小汽车为与SUV之间也是继承关系，它们之间的关系为泛化关系，使用带空心箭头的实线表示；</p>
 </li>
-<li><p>是否持续作业</p>
+<li><p>小汽车与发动机之间是组合关系，使用带实心箭头的实线表示；</p>
 </li>
-<li><p>异常处理</p>
+<li><p>学生与班级之间是聚合关系，使用带空心箭头的实线表示；</p>
 </li>
-<li><p>报表统计</p>
+<li><p>学生与身份证之间为关联关系，使用一根实线表示；</p>
+</li>
+<li><p>学生上学需要用到自行车，与自行车是一种依赖关系，使用带箭头的虚线表示；</p>
 </li>
 </ul>
-<p>要从这些个维度出发，去进行功能的设计。以是否本人为例，首先账号密码也是一种隐藏的判定。假如加入虹膜打卡的诉求、乃至采血DNA验证的诉求，都在范畴内。这些判定策略应该是可以自由组合，而不是单一判定的。</p>
-<h1 id="打卡规划"><a href="#打卡规划" class="headerlink" title="打卡规划"></a>打卡规划</h1><p>以打卡功能为例出发，讲讲规划思路。</p>
-<p><img src="http://i.chanpin100.com/156749014714972774" alt="img"></p>
-<p>首先，要有触点，能让用户进行打卡。这个触点没有严格要求，APP、小程序、Web都行。打开页面的时候，需要将帐号信息给到规则解释器。解释器根据帐号信息，找到对应的考勤规则进行计算。计算得到的打卡规则给到考勤打卡页面，进行UI渲染、检测特征和约束。打卡和服务器有个交互，打卡成功后服务器应该返回打卡时间和状态。 </p>
+<h2 id="序列图"><a href="#序列图" class="headerlink" title="序列图"></a>序列图</h2><p><img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/%E5%BA%8F%E5%88%97%E5%9B%BE.png" alt="序列图"></p>
+<h2 id="状态图"><a href="#状态图" class="headerlink" title="状态图"></a>状态图</h2><blockquote>
+<p>UML 状态图是图表本身的名称，主要用于描述对象具有的各种状态、状态之间的转换过程以及触发状态转换的各种事件和条件。</p>
+</blockquote>
+<blockquote>
+<p>使用状态图的主要目的：</p>
+<ul>
+<li>为了模拟系统的动态环节</li>
+<li>反应系统模型生命周期</li>
+<li>一个对象来描述不同的状态，在其生命周期的时间。</li>
+<li>定义一个状态机模型状态的对象</li>
+</ul>
+</blockquote>
+<p>当发生特定事件时，对象可能会发生状态的变动。</p>
+<p>绘制状态图之前，我们必须明确以下几点：</p>
+<ul>
+<li>识别对象，以进行分析</li>
+<li>识别对象的各类状态</li>
+<li>识别各类的事件，尤其是直接导致状态改变的时间</li>
+</ul>
+<p>举个例子：<br><img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/%E7%8A%B6%E6%80%81%E5%9B%BE.jpg" alt="状态图"></p>
+<h2 id="活动图"><a href="#活动图" class="headerlink" title="活动图"></a>活动图</h2><blockquote>
+<p>UML 活动图能够捕捉到该系统的动态行为，UML 中其它的四个图是用来显示从一个对象到另一个消息流，但活动图是用来显示消息流从一个活动到另一个活动图。<br>以下是 UML 活动图目的描述：</p>
+<ul>
+<li>绘制活动流程系统</li>
+<li>描述的顺序从一个活动到另一个</li>
+<li>描述系统并行，分支，并发流。</li>
+</ul>
+</blockquote>
+<p>以找饮料为例子：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/%E6%B4%BB%E5%8A%A8%E5%9B%BE.png" alt="活动图1_分支"></p>
+<p>上述的图将人视为开始起点有些奇怪，整体上是没有问题的。</p>
+<p>包含子活动，如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/%E6%B4%BB%E5%8A%A8%E5%9B%BE2.png" alt="活动图2_子活动"></p>
+<p>其中pay for the book为子活动，子活动的结束符号可能是其他样式</p>
 
             </div>
             <hr/>
@@ -439,8 +550,8 @@
                 </a>
             </div>
             <br/>
-            <a  href="/2019/03/16/gui-lu-kao-qin-shi-zhi/">
-                    《规律--考勤实质》
+            <a  href="/2019/04/23/ye-wu-jian-mo-jian-mo-gong-zuo-liu-yu-uml/">
+                    《业务建模--建模工作流与UML》
             </a> 由
             <a href="https://github.com/BakerHancockChen/BakerHancockChen.github.io">
                 Oliver
@@ -485,6 +596,58 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
+                <a href="/2019/05/13/gong-zuo-liu-cheng/">
+                    <div class="card-image">
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/brainstorming-campaign-collaborate-6224.jpg" class="responsive-img" alt="产品&项目工作流程总结">
+                        
+                        <span class="card-title">产品&项目工作流程总结</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            产品和项目连轴转很久了，对现有工作流程做个总结
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-05-13
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/通用知识/" class="post-category">
+                                    通用知识
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/研发流程/">
+                        <span class="chip bg-color">研发流程</span>
+                    </a>
+                    
+                    <a href="/tags/项目管理/">
+                        <span class="chip bg-color">项目管理</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
                 <a href="/2019/04/21/ye-wu-jian-mo-jing-zheng-you-shi/">
                     <div class="card-image">
                         
@@ -500,9 +663,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-04-21
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-04-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -520,54 +683,6 @@
                     
                     <a href="/tags/业务建模/">
                         <span class="chip bg-color">业务建模</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/03/15/gui-lu-kao-qin-wen-ti/">
-                    <div class="card-image">
-                        
-                        <img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/finger-2056030_640.jpg" class="responsive-img" alt="规律--考勤问题">
-                        
-                        <span class="card-title">规律--考勤问题</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            考勤问题的错误示范
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-03-15
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/通用知识/" class="post-category">
-                                    通用知识
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/有效思考/">
-                        <span class="chip bg-color">有效思考</span>
                     </a>
                     
                 </div>
