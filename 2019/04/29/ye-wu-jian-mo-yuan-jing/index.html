@@ -4,11 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="小程序那些事--任势, 道·术">
-    <meta name="description" content="《孙子兵法势篇》，知势、 造势然后任势。任势，就是创造和利用对自己有利的态势。下面我来给大家分享下，小程序从注册、设计、开发到测试、发布的一些注意事项。
-注册先讲讲从0开始注册的流程，如下图所示：
-  
- 如果已经有公众号，步骤就简单很多。">
+    <meta name="keywords" content="业务建模--愿景, 道·术">
+    <meta name="description" content="本文为《软件方法-业务建模和需求》的读后感系列，可在线试读
+愿景定义
+没有愿景的支持，互联网时代流行的口号“我们只做最重要的需求”、“砍掉80%的功能，专注于剩下的20%”将沦为空话，怎么判断哪条需求最重要？砍掉哪80%？愿景就是需求排序的">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>小程序那些事--任势 | 道·术</title>
+    <title>业务建模--愿景 | 道·术</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -200,13 +199,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/frank-eiffert-G9gHtroxnaI-unsplash.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/alphabet-cube-mission-462353.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        小程序那些事--任势
+                        业务建模--愿景
                     </div>
                 </div>
             </div>
@@ -318,8 +317,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/小程序/">
-                                <span class="chip bg-color">小程序</span>
+                            <a href="/tags/业务建模/">
+                                <span class="chip bg-color">业务建模</span>
                             </a>
                         
                     </div>
@@ -330,8 +329,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/微信/" class="post-category">
-                                微信
+                            <a href="/categories/需求分析/" class="post-category">
+                                需求分析
                             </a>
                         
                     </div>
@@ -342,21 +341,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-09-25
+                    2019-04-29
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        1.9k
+                        3k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        6 分
+                        10 分
                     </div>
                     
                 
@@ -372,87 +371,199 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>《孙子兵法势篇》，知势、 造势然后任势。任势，就是创造和利用对自己有利的态势。下面我来给大家分享下，小程序从注册、设计、开发到测试、发布的一些注意事项。</p>
-<h1 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h1><p>先讲讲从0开始注册的流程，如下图所示：</p>
-<p> <img src="http://image.woshipm.com/wp-files/2018/09/5WbZGirf8sKQzRcIQcio.png!v.jpg" alt="img"> </p>
-<p> 如果已经有公众号，步骤就简单很多。公众号快速注册，填写邮箱密码，然后激活邮箱，最后点个确认就搞定了。：</p>
-<p> <img src="http://image.woshipm.com/wp-files/2018/09/6NXXfIVk1pXwiD4SjtwQ.png!v.jpg" alt="img"> </p>
-<h1 id="设计"><a href="#设计" class="headerlink" title="设计"></a>设计</h1><p>前面讲到，微信的小程序势类似iOS的打法，整体的生态相对比较封闭。微信官方提供一份设计指南，希望保持整体交互的一致性。如果大家设计小程序的时候，希望知道小程序现有的控件，支持什么能力。在Web端其实可以进行查看，一部分控件UE，地址是<a href="https://weui.io/" target="_blank" rel="noopener">https://weui.io</a>/。</p>
-<p>手机上回更全，包括地图、媒体之类这些能力。搜索小程序，名字叫做“小程序示例”，就可以体验了。</p>
-<p> <img src="http://image.woshipm.com/wp-files/2018/09/HrCXea8qYyKQEdvy9Ph2.png!v.jpg" alt="img"> </p>
-<h1 id="开发"><a href="#开发" class="headerlink" title="开发"></a>开发</h1><p>  开发这块我不是太熟悉，简单的给大家介绍一下。 <img src="http://image.woshipm.com/wp-files/2018/09/rVKHL5Az6yEnRNYkJ7f8.png!v.jpg" alt="img"> </p>
-<p>首先让我感觉比较强大的是小程序开发的开发者工具，有以下特性：</p>
+                <p>本文为《软件方法-业务建模和需求》的读后感系列，可在线<a href="http://www.umlchina.com/book/softmeth_02.htm" target="_blank" rel="noopener">试读</a></p>
+<h1 id="愿景定义"><a href="#愿景定义" class="headerlink" title="愿景定义"></a>愿景定义</h1><blockquote>
+<p>没有愿景的支持，互联网时代流行的口号“我们只做最重要的需求”、“砍掉80%的功能，专注于剩下的20%”将沦为空话，怎么判断哪条需求最重要？砍掉哪80%？愿景就是需求排序的主要依据。</p>
+</blockquote>
+<p>一个系统的愿景就是：这个系统为用户提供了什么好处，让用户愿意为此买单</p>
+<p>作者提供了一种“爆炸法”，辅助我们更好的找到愿景：</p>
+<blockquote>
+<p><strong>爆炸法：</strong></p>
+<p>如果投资人在你身上绑了炸弹，命令你几分钟时间内把当前研究的系统推销出去，而且只能找一个人推销。假设这个炸弹还能感应脑电波，推销完毕后,如果炸弹感应到被推销的人对这个系统不感兴趣，炸弹就会爆炸。这种情况下，你会选择向谁推销，推销时选择说什么话，保住自己性命的可能性最大？这个问题的答案就是老大和愿景。</p>
+<p>（很多人可能会第一时间想到向自己的父亲或母亲推销，但是，父母会买单是对你的性命感兴趣，未必对你推销的系统感兴趣，炸弹依然会爆炸！）</p>
+<p>如果上面的场景还不足以刺激你思考，可以用加强版：如果投资人在你和你的情敌身上绑了炸弹，命令你们几分钟时间内把当前研究的系统推销出去，谁得到的感兴趣的脑电波强，谁就活下来。</p>
+</blockquote>
+<h1 id="目标组织和老大"><a href="#目标组织和老大" class="headerlink" title="目标组织和老大"></a>目标组织和老大</h1><blockquote>
+<p>目标组织：待开发系统将改进其流程的组织。它可以是一个机构，也可以是一个人群。</p>
+<p>老大：目标组织的代表</p>
+</blockquote>
+<p>在B端，目标组织更多时候被称呼为“客户”。而老大，是系统最优先照顾其利益的那个人（一般是业务部门leader）。一般有以下几种情况：</p>
+<table>
+<thead>
+<tr>
+<th><strong>编号</strong></th>
+<th><strong>情况</strong></th>
+<th><strong>系统改进范围</strong></th>
+<th><strong>定位老大的步骤</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>针对特定人的定制系统</td>
+<td>某个特定人</td>
+<td>这个人就是老大，无须特殊工作</td>
+</tr>
+<tr>
+<td>2</td>
+<td>针对人群的非定制系统</td>
+<td>某个人群</td>
+<td>定位目标人群 ，定位老大</td>
+</tr>
+<tr>
+<td>3</td>
+<td>针对某特定机构的定制系统</td>
+<td>某特定机构</td>
+<td>定位机构范围，定位老大</td>
+</tr>
+<tr>
+<td>4</td>
+<td>针对某类机构的非定制系统</td>
+<td>某类机构</td>
+<td>定位机构范围 ，定位目标机构，定位老大</td>
+</tr>
+</tbody></table>
+<h2 id="定位目标人群和老大"><a href="#定位目标人群和老大" class="headerlink" title="定位目标人群和老大"></a>定位目标人群和老大</h2><p>第二种情况，系统改进的目标组织是改善个人工作，但不清楚是具体的人，还是某类人群，甚至所有人。</p>
+<p>常见错误：</p>
+<ul>
+<li>从功能加上“人群”二字得到目标人群</li>
+<li>吃窝边草，究竟找老大</li>
+<li>虚构老大</li>
+</ul>
+<p>正确思考方法是不断追问，层层细化，直到满意为止。以某虚构的K12教育网站为例，细化其目标客户：</p>
 <ol>
-<li>可调试；</li>
-<li>编译后可预览；</li>
-<li>基本的代码编辑、智能提示；</li>
-<li>项目管理；</li>
-<li>创建、手机预览；</li>
-<li>代码提交审核。</li>
+<li>目标客户到底是谁？肯定是中学生，中学生学业压力大，更需要学习方法的提升。小学生大政策上都要减负，家长喜欢素质教育。再小一点，都没学习的压力。</li>
+<li>中学生包括初中生、高中生，到底哪个更符合？都可以的。</li>
+<li>不能都可以，总要找个更合适的，哪个更合适？初中生吧。</li>
+<li>为什么是初中生？初中生往往没掌握系统的学习方法，需要我们网站的帮助。</li>
+<li>哪个年级的初中生更合适？当然是初一的学生。他们刚从小学保姆式的教育中脱离，学习方法没有那么系统。课程压力又忽然增大，这时候对学习方法提升很迫切。</li>
+<li>哪里的初中生合适？一二线城市的初中生比较合适。一方面用户更习惯互联网，用户教育成本低。另一方面，一二线城市教育竞争激烈，家长学生的需求比较旺盛。最后，网络基础设施好，效果更好。</li>
 </ol>
-<p>另外一方面，微信势支持WebSocket，小程序对于聊天和实时取数的场景，是能够覆盖的。</p>
-<h1 id="兼容"><a href="#兼容" class="headerlink" title="兼容"></a>兼容</h1><p> 基础库和微信版本是一一对应的，兼容是针对基础库的兼容。如果不负责最低的基础库，在添加小程序的时候是会有提示的。 </p>
-<p> <img src="http://image.woshipm.com/wp-files/2018/09/xAMbtwcttsyXkU2Ixg6j.jpg!v.jpg" alt="img"> </p>
-<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>小程序没有测试包这个概念，只有“体验版”</p>
-<p> <img src="http://image.woshipm.com/wp-files/2018/09/51Iv99kBnQF5TroQ3wTr.png!v.jpg" alt="img"> </p>
-<p>简单分为五个步骤：</p>
+<p>作者提供了更严格的方法，使用类图：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/%E7%B1%BB%E5%9B%BE%E5%AE%9A%E4%BD%8D%E7%9B%AE%E6%A0%87%E4%BA%BA%E7%BE%A4.jpg" alt="类图定位目标人群"></p>
+<blockquote>
+<p>对类的每个属性以及所关联的每个属性展开比较，找出最“像”的属性值集合</p>
+</blockquote>
+<p>这个方法，其实很像现在互联网中的用户画像。但是很多产品的用户画像是后续运营得到的，前期必须通过用户研究得到，不能虚构得到persona。</p>
+<h2 id="定位机构范围和老大"><a href="#定位机构范围和老大" class="headerlink" title="定位机构范围和老大"></a>定位机构范围和老大</h2><p>第三种情况，系统改进的目标组织是某个机构。定位目标结构范围和老大的时候，思维还是逐步逼近的。</p>
+<h3 id="定位机构范围"><a href="#定位机构范围" class="headerlink" title="定位机构范围"></a>定位机构范围</h3><p>首先要解决的是，如何恰当的确定所研究机构的范围。这个可能要尝试多次，范围大了小了都很正常。</p>
+<p>一般有两个方法：</p>
 <ol>
-<li><strong>上传开发版代码：</strong>即在微信开发者工具中上传代码，这个动作要管理员扫描二维码授权；</li>
-<li><strong>发布体验版本：</strong>微信公众平台-小程序管理页面，可以从开发管理一栏中看到开发版中，以及提交的代码。提交审核旁边下拉按钮，选择“选为体验版本”，然后设置成功；</li>
-<li><strong>生成二维码：</strong>设置为体验者版本后，会生成一个二维码，可以用微信扫码体验。但这个码，不是随便谁都能使用的，体验者版本，是需要体验者才能使用的，这里应该是考虑保密的诉求；</li>
-<li><strong>添加体验者：</strong>管理员登录公众平台后台，并验证身份，然后根据微信号，添加体验者的微信；</li>
-<li><strong>扫码体验：</strong>使用微信，扫码进行体验（前提是微信的版本大于基础苦最低版本的限制）。</li>
+<li>根据系统名字推测范围大小</li>
+<li>画一个圈，把大多数能被替换责任的系统圈在里面：<img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/%E6%9B%BF%E6%8D%A2%E8%B4%A3%E4%BB%BB%E5%AE%9A%E4%BD%8D%E8%8C%83%E5%9B%B4.jpg" alt="替换责任定位范围"></li>
 </ol>
-<h1 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h1><p> 小程序开发者发布新版小程序时，可根据自身需求选择“全量发布”或“分阶段发布”（不支持灰度）。 </p>
-<p> <img src="http://image.woshipm.com/wp-files/2018/09/LS0V4B5CIfqvY0pH7udC.jpg!v.jpg" alt="img"> </p>
-<p> 全量发布：即时向全量微信用户发布新版小程序。 </p>
-<p> <img src="http://image.woshipm.com/wp-files/2018/09/bk3oOdDEEJNgOtwEHYtK.jpg!v.jpg" alt="img"> </p>
-<p>分阶段发布：新版小程序将在15天内以开发者自定义的比例，向微信用户发布更新。</p>
-<p>分阶段发布流程：</p>
-<ul>
-<li>填写发布比例。发布后，将有该比例用户使用新版本小程序；</li>
-<li>调整发布比例。根据线上使用情况，逐步提升发布比例。提升发布比例：开发者可根据线上使用情况，逐步提升发布比例；</li>
-<li>开发者必须在15天内全量发布/撤销发布。如开发者在首次发布后15天内未撤销发布，平台将在第15天全量发布小程序新版本。</li>
-</ul>
-<p>还有两个注意事项，希望大家记住：</p>
-<ul>
-<li>小程序第一个版本必须选择“全量发布”模式发布；</li>
-<li>开发者也可撤销分阶段发布，若撤销发布当前版本，所有用户将使用小程序上一个全量发布的线上版本。</li>
-</ul>
-<h1 id="版本"><a href="#版本" class="headerlink" title="版本"></a>版本</h1><p>好的，简单介绍了发布，现在讲一讲小程序的版本：</p>
-<p>其实就这么几个关键词：<strong>全量发布、15天、撤销发布，一个最新包。</strong></p>
-<p>小程序不像APP，最终只会有一个最新版本（分阶段发布的那段时间会有两个版本共存）。</p>
-<p>小程序第一个版本必须选择“全量发布”模式发布，若存在正在分阶段发布的小程序版本，不可发布新版本、不可回退已全量发布的线上版本；</p>
-<p>当线上版本的上一个版本是分阶段发布并已撤销发布，那么当前线上版本不可回退。</p>
-<p>开发者必须在15天内全量发布/撤销发布。如开发者在首次发布后15天内未撤销发布，平台将在第15天全量发布小程序新版本。</p>
-<p>下图是我虚构的一个版本历程：</p>
-<p> <img src="http://image.woshipm.com/wp-files/2018/09/LMpHlHmLfZ4iZiqayOIi.png!v.jpg" alt="img"> </p>
-<h1 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h1><p>先介绍下小程序更新的约束：</p>
-<ul>
-<li>小程序需要设置兼容的基础库版本，对应微信的版本；</li>
-<li>可以选择无缝更新，但改动较大时，用户会感觉比较奇怪；</li>
-<li>只能选择更新，无法选择不更新；</li>
-<li>微信自动调用小程序的更新检测，自动下载，无法控制。</li>
-</ul>
-<p>根据这个约束，我在设计小程序时候（登录才能使用），画了下面的这个流程图：</p>
-<p> <img src="http://image.woshipm.com/wp-files/2018/09/lR79KmMuUHr1AtHWnwjN.png!v.jpg" alt="img"> </p>
-<p>这里面微信最新，只是一个代表，其实就是检测基础库版本，过低就要求更新微信版本。</p>
-<p>先讲一讲热启动和冷启动。假如用户已经打开过某小程序，然后在一定时间内再次打开该小程序，此时无需重新启动，只需将后台态的小程序切换到前台，这个过程就是热启动；冷启动指的是用户首次打开或小程序被微信主动销毁后再次打开的情况，此时小程序需要重新加载启动。</p>
-<h1 id="客服"><a href="#客服" class="headerlink" title="客服"></a>客服</h1><p>客服这块我也了解的不多，简单给大家分享下。这个是有赞的微商城的一个客服的UI。</p>
-<p> <img src="http://image.woshipm.com/wp-files/2018/09/nxiuKRs0dBNQ5PTayBMk.png!v.jpg" alt="img"> </p>
-<p>总结一下特性：</p>
-<ul>
-<li>客服的入口，是按钮，这是小程序提供的客服会话按钮。或者，使用普通的按钮，设置open-type=”contact” 亦可进入客服会话，这让我们可以更好的定制UI；</li>
-<li>标准的客服会话按钮，提供了session-from参数，用于标记用户从哪个功能模块，哪个页面进入的客服；</li>
-<li>小程序进入的时候，可以将当前小程序页面，发送小程序卡片给客服，更容易沟通，客服不用再根据名称去查找资料；</li>
-<li>客服专属入口，可以开启推送消息。小程序客服消息页面（最右边的图），右上角按钮可以进入通知设置，默认“消息通知提醒”是开启的。开启后，当客服回复消息时，客户就能收到推送提醒。（微信的推送）。</li>
-</ul>
-<p><strong>客服后端：</strong>使用官方提供的网页版客服。</p>
-<p>使用网页版客服工具前，小程序管理员需在小程序后台完成客服人员的绑定。目前小程序支持绑定不多于100个客服人员。</p>
-<p>使用客服消息接口，将消息转发给自己的服务器，使用三方客服系统或者内部客服系统。</p>
-<p>以下是小程序官网的客服消息发送限制（不可能再出现，客服追着你骂个不停了）：</p>
-<p> <img src="http://image.woshipm.com/wp-files/2018/09/ZWNA30gPzDhHcY5Tma51.png!v.jpg" alt="img"> </p>
-<p>好了，小程序的分享就到这里。</p>
+<p>定位机构的范围，其实和老大的职权范围有关，老大是营销总监，把整个公司作为研究对象就太大了。</p>
+<h3 id="定位老大"><a href="#定位老大" class="headerlink" title="定位老大"></a>定位老大</h3><p>定位老大有以下常见的错误：</p>
+<ol>
+<li>目标机构的IT主管是老大，这个是常见的错误。一般做项目，甲方项目经理是IT部门的人员，所以可能发言较多。绝大多数情况下，系统的愿景的解决业务部门的问题，适配业务部门的流程。</li>
+<li>机构之上的大领导是老大。这个范围扩大了，具体落地的时候需求会不够具体。</li>
+<li>谁出现谁就是老大，这个也比较常见。通常一个系统可能涉及多个业务部门，主要费用由某个部门出。例如营销中心下的A渠道出费用，还有B、C两个渠道。实际上，要以营销中心为研究对象，老大应该是营销老总。</li>
+<li>把其他涉众当作老大。例如营销管理系统，当然要以营销中心为研究对象。但由于调研安排以及高层间的微妙关系，会出现把市场部当老大的情况。</li>
+</ol>
+<h2 id="定位目标机构"><a href="#定位目标机构" class="headerlink" title="定位目标机构"></a>定位目标机构</h2><p>系统是为某一类机构服务的，除了上述讲的，还要进行目标机构的定位。</p>
+<p>这个还是一样，使用类图，辅助定位：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/%E7%B1%BB%E5%9B%BE%E5%AE%9A%E4%BD%8D%E7%9B%AE%E6%A0%87%E6%9C%BA%E6%9E%84.jpg" alt="类图定位目标机构"></p>
+<p>公司目标是盈利，起码要生存。很可能有了一个想法，找到了第一个客户，就以这个为目标客户，进行分析。这个是完全没有问题的，但是必须承认当前做的是项目（针对该客户的定制系统）。设计的时候可以考虑复用，但是做需求不能首鼠两端。</p>
+<p>展开一下，国内好多公司规模变大盈利增速却不匹配，就是项目和产品没理清。甚至乎，太多的“卖人头”公司，组织架构真正有产品部的少。最常规的做法是：</p>
+<p>做了一个或几个项目，然后形成解决方案，把最大那个项目的代码照搬，这就是1.0产品了。</p>
+<p>这样的产品，不说技术架构扩展差，功能的完整性都很难保证。一般的项目，是不会考虑各种分支异常流程的，一些非功能性需求就更没有了。</p>
+<h2 id="其他要点"><a href="#其他要点" class="headerlink" title="其他要点"></a>其他要点</h2><blockquote>
+<ol>
+<li>开发团队领导，不是老大</li>
+<li>人群和机构，谁是战场。以新浪微博为例，社交媒体平台，那么核心还是媒体属性。研究的应该是大V等产生核心内容的人群，而不是新浪这个机构。</li>
+<li>人群和人群，更为稀缺的优先选为战场。例如在线问诊平台，老大应该是医生。当然，现在好多都是拆分为医生端和患者端，这样体验会更好。</li>
+<li>根据阶段不同，老大也可以变化。说需求有变化，那是从一个静止的时间点来看。</li>
+</ol>
+</blockquote>
+<h1 id="提炼改进目标"><a href="#提炼改进目标" class="headerlink" title="提炼改进目标"></a>提炼改进目标</h1><blockquote>
+<p> 一份愿景中,改进目标可以是一个，也可以是多个，改进目标应该是可以度量的</p>
+</blockquote>
+<p>作者把愿景相关的概念画成了类图：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/%E6%84%BF%E6%99%AF%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5%E7%9A%84%E7%B1%BB%E5%9B%BE.jpg" alt="愿景相关概念的类图"></p>
+<h2 id="不是系统功能需求"><a href="#不是系统功能需求" class="headerlink" title="不是系统功能需求"></a>不是系统功能需求</h2><table>
+<thead>
+<tr>
+<th>像目标的表述</th>
+<th>不像目标的表述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>提高回访订单转化率</td>
+<td>建立一个CRM系统</td>
+</tr>
+<tr>
+<td>减少每张处理订单需要的人力</td>
+<td>提供自助下单功能</td>
+</tr>
+<tr>
+<td>缩短评估贷款风险的周期</td>
+<td>能够对贷款申请作风险评估</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>改进目标和系统功能是多对多的：一个改进目标可能会带来系统的多个功能，一个系统功能可能覆盖多个改进目标<br><img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/%E6%94%B9%E8%BF%9B%E7%9B%AE%E6%A0%87%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%8A%9F%E8%83%BD.jpg" alt="改进目标与系统功能"></p>
+</blockquote>
+<blockquote>
+<p>如上图中，“提高防汛决策准确度”是改进目标，不是功能。系统没有提供这样一项功能，领导输入一个准确度数值，确认，防汛决策准确度“duang”的一下就提高了。需要在各个岗位分别使用“查看云图”、“上报水库运行情况”等功能之后，带来的综合效果是，防汛组织在“防汛决策准确度”这个指标上得到了改进。</p>
+</blockquote>
+<p>思考度量指标，可用以下方法：</p>
+<p>•针对形容词来思考符合这个形容词和不符合这个形容词的情况。</p>
+<p>•从初步设想的解决方案倒推。思考如果没有这个解决方案，涉众要付出什么代价。</p>
+<p>•借鉴机构的KPI*（关键绩效指标）：<br><img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/%E6%9F%90%E9%83%A8%E9%97%A8KPI.jpg" alt="某部门KPI"></p>
+<h2 id="不是系统质量需求"><a href="#不是系统质量需求" class="headerlink" title="不是系统质量需求"></a>不是系统质量需求</h2><blockquote>
+<p>改进目标针对的是组织某个行为的指标，而不是系统行为的指标。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>质量需求</th>
+<th>改进目标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>从接收到请求到回应的时间应在2秒之内</td>
+<td>缩短申请的平均审批周期</td>
+</tr>
+</tbody></table>
+<h2 id="改进是系统带来的"><a href="#改进是系统带来的" class="headerlink" title="改进是系统带来的"></a>改进是系统带来的</h2><p>某医院护士系统开始的愿景如下所示：</p>
+<table>
+<thead>
+<tr>
+<th>系统</th>
+<th>老大</th>
+<th>目标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>移动病区护士系统</td>
+<td>Z大学附属第<em>医院院长 张*</em></td>
+<td>减少医疗事故</td>
+</tr>
+</tbody></table>
+<p>这个目标太大了，叫做正确的废话</p>
+<p>通过如下类图，进行分析：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/%E7%B1%BB%E5%9B%BE%E5%AE%9A%E4%BD%8D%E6%94%B9%E8%BF%9B%E7%9B%AE%E6%A0%87.jpg" alt="类图定位改进目标"></p>
+<p>护士的主要工作是输液、抽血等，以输液为例。系统能解决的，主要是操作层面的问题，所以恰当的目标应该是：</p>
+<table>
+<thead>
+<tr>
+<th>系统</th>
+<th>老大</th>
+<th>目标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>移动病区护士系统</td>
+<td>Z大学附属第<em>医院院长 张*</em></td>
+<td>减少错误执行医嘱事件的发生率</td>
+</tr>
+</tbody></table>
+<h2 id="多个目标之间的权衡"><a href="#多个目标之间的权衡" class="headerlink" title="多个目标之间的权衡"></a>多个目标之间的权衡</h2><blockquote>
+<p>如果愿景里只表述了一个改进指标，那么可以缺省地认为其他指标是不变的。不过，有的时候老大的改进可能会有多个目标（当然也带来了多个指标），而且目标之间还有可能会产生冲突。这时，需要对目标排序，揣摩出老大首要关心的目标。</p>
+</blockquote>
+<p>软件行业有个著名的不可能铁三角， 范围S、进度T、成本C ， 当然也可以说是项目的四要素：范围、进度、成本和质量。 </p>
+<p>理论上，是没有又实时访问、速度又快的多维统计报表提供给高层决策的。以大屏BI举个例子：</p>
+<p>市场面上大屏BI常见方案，也就是销量数据时刻前端自增更新，后端服务器ETL调度执行，定期同步数据。</p>
+<p>这种方案，是由于老大更看中“准确”，但对数据的时效性又有一定的要求。但哪怕硬件条件很好，也就是1分钟上下刷新一次。部分复杂的统计逻辑，1分钟内可能ETL都跑不完。</p>
 
             </div>
             <hr/>
@@ -489,8 +600,8 @@
                 </a>
             </div>
             <br/>
-            <a  href="/2018/09/25/xiao-cheng-xu-na-xie-shi-ren-shi/">
-                    《小程序那些事--任势》
+            <a  href="/2019/04/29/ye-wu-jian-mo-yuan-jing/">
+                    《业务建模--愿景》
             </a> 由
             <a href="https://github.com/BakerHancockChen/BakerHancockChen.github.io">
                 Oliver
@@ -535,30 +646,30 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2018/09/25/xiao-cheng-xu-na-xie-shi/">
+                <a href="/2019/05/13/gong-zuo-liu-cheng/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/jonas-lee-o6elTKWZ5bI-unsplash.jpg" class="responsive-img" alt="小程序那些事">
+                        <img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/brainstorming-campaign-collaborate-6224.jpg" class="responsive-img" alt="产品&项目工作流程总结">
                         
-                        <span class="card-title">小程序那些事</span>
+                        <span class="card-title">产品&项目工作流程总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            系列文章将解读小程序诞生到崛起之路，本文为整体导航
+                            产品和项目连轴转很久了，对现有工作流程做个总结
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2018-09-25
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-05-13
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/微信/" class="post-category">
-                                    微信
+                            <a href="/categories/通用知识/" class="post-category">
+                                    通用知识
                                 </a>
                             
                             
@@ -568,8 +679,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/小程序/">
-                        <span class="chip bg-color">小程序</span>
+                    <a href="/tags/研发流程/">
+                        <span class="chip bg-color">研发流程</span>
+                    </a>
+                    
+                    <a href="/tags/项目管理/">
+                        <span class="chip bg-color">项目管理</span>
                     </a>
                     
                 </div>
@@ -583,30 +698,30 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2018/09/24/xiao-cheng-xu-na-xie-shi-zhi-shi/">
+                <a href="/2019/04/23/ye-wu-jian-mo-jian-mo-gong-zuo-liu-yu-uml/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/ciel-cheng-VRTcPxPS-ds-unsplash.jpg" class="responsive-img" alt="小程序那些事--知势">
+                        <img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/diagram-flowchart-hand-1181311.jpg" class="responsive-img" alt="业务建模--建模工作流与UML">
                         
-                        <span class="card-title">小程序那些事--知势</span>
+                        <span class="card-title">业务建模--建模工作流与UML</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            知道小程序目前积累的势能，方能制定出合适的方案
+                            低成本制造好卖的系统，建模工作流必不可少
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2018-09-24
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-04-23
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/微信/" class="post-category">
-                                    微信
+                            <a href="/categories/需求分析/" class="post-category">
+                                    需求分析
                                 </a>
                             
                             
@@ -616,8 +731,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/小程序/">
-                        <span class="chip bg-color">小程序</span>
+                    <a href="/tags/业务建模/">
+                        <span class="chip bg-color">业务建模</span>
                     </a>
                     
                 </div>
