@@ -4,11 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="规律--汽水问题, 道·术">
-    <meta name="description" content="以汽水问题为例，向程序员致敬，并缅怀自己的编程岁月。以下的所有函数，都是数学表达式，不是编码实现。
-简单首先从最简单的场景出发，看看汽水问题的思路。现有问题描述如下：
-规则：喝汽水，1瓶汽水1元，集齐2个空瓶才能换一瓶汽水。
-前提：现在有2">
+    <meta name="keywords" content="非功能性需求, 道·术">
+    <meta name="description" content="我们常说要加一个功能，或者扩展已有功能。有没有考虑过，功能之外的东西呢？今天给大家分享，非功能性需求。
+定义我们总是关注功能上的需求，忽略非功能需求。
+功能性需求功能性需求，指的是产品必须执行的动作，不是质量要求。且此类需求需要避免歧义，注">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>规律--汽水问题 | 道·术</title>
+    <title>非功能性需求 | 道·术</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -200,13 +199,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/beverage-bottle-brand-2983100.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        规律--汽水问题
+                        非功能性需求
                     </div>
                 </div>
             </div>
@@ -318,8 +317,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/有效思考/">
-                                <span class="chip bg-color">有效思考</span>
+                            <a href="/tags/PRD/">
+                                <span class="chip bg-color">PRD</span>
                             </a>
                         
                     </div>
@@ -330,8 +329,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/通用知识/" class="post-category">
-                                通用知识
+                            <a href="/categories/需求分析/" class="post-category">
+                                需求分析
                             </a>
                         
                     </div>
@@ -342,21 +341,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-03-10
+                    2018-08-21
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        1.6k
+                        1.9k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        5 分
+                        6 分
                     </div>
                     
                 
@@ -372,108 +371,266 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>以汽水问题为例，向程序员致敬，并缅怀自己的编程岁月。以下的所有函数，都是数学表达式，不是编码实现。</p>
-<h2 id="简单"><a href="#简单" class="headerlink" title="简单"></a>简单</h2><p>首先从最简单的场景出发，看看汽水问题的思路。现有问题描述如下：</p>
-<p>规则：喝汽水，1瓶汽水1元，集齐2个空瓶才能换一瓶汽水。</p>
-<p>前提：现在有20元</p>
-<p>问题：到底可以喝多少瓶汽水</p>
-<p>一般来说，第一反应肯定是基于前提，按照规则去拆解问题。思路如下：</p>
+                <p>我们常说要加一个功能，或者扩展已有功能。有没有考虑过，功能之外的东西呢？今天给大家分享，非功能性需求。</p>
+<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>我们总是关注功能上的需求，忽略非功能需求。</p>
+<h2 id="功能性需求"><a href="#功能性需求" class="headerlink" title="功能性需求"></a>功能性需求</h2><p>功能性需求，指的是产品必须执行的动作，不是质量要求。且此类需求需要避免歧义，注意用词。</p>
+<p>大体上可以分为：</p>
+<ul>
+<li><p>产品需要哪些功能？</p>
+</li>
+<li><p>这些功能是为解决哪些问题？</p>
+</li>
+<li><p>功能与问题之间的追踪是什么样的？</p>
+</li>
+<li><p>这些功能能够改变公司的业务问题吗？</p>
+</li>
+<li><p>功能需求如何测试？如何验收？</p>
+</li>
+</ul>
+<p>以自行车为例。自行车又叫单车， 通常是二轮的小型陆上车辆 。那么对应的功能性需求，我认为至少包含：</p>
 <ol>
-<li><p>20元，获得20瓶汽水。喝掉20瓶，剩下20个空瓶</p>
+<li>传动系统，能让人的踩踏变成轮子向前的动力</li>
+<li>导向系统，能控制行驶的方向</li>
+<li>制动系统，能进行减速、停止驾驶等</li>
+</ol>
+<h2 id="非功能性需求"><a href="#非功能性需求" class="headerlink" title="非功能性需求"></a>非功能性需求</h2><p>产品必须具备的属性，使产品可靠、易用，体验更好。注意不要写解决方案，消除技术成分。</p>
+<p>一般包含：</p>
+<ul>
+<li><p>产品需要什么样的质量标准？</p>
 </li>
-<li><p>20个空瓶，可换10瓶汽水。喝掉10瓶，剩下10个空瓶</p>
+<li><p>易使用性、易扩展性、性能是什么样的要求？</p>
 </li>
-<li><p>10个空瓶，可换5瓶汽水。喝掉5瓶，剩下5个空瓶</p>
+<li><p>如何度量？如何验收？</p>
 </li>
-<li><p>4个空瓶，可换2瓶汽水。喝掉2瓶，得到3个空瓶（5个空瓶中4个去换汽水，剩下1）</p>
+<li><p>产品有什么约束条件？</p>
 </li>
-<li><p>2个空瓶，可换1瓶汽水。喝掉1瓶，得到2个空瓶</p>
+</ul>
+<p>还是以自行车为例，非功能性需求可以是：</p>
+<ol>
+<li>使用时自减少颠簸。具体方案可以是用橡胶轮子取代木轮，也可以是增加避震缓冲器。</li>
+<li>使用时候要省力。具体方案可以是减少传动系统动力损耗，也可以是增加变速器辅助爬坡，还可以是增加助力系统。</li>
+</ol>
+<h1 id="必要性"><a href="#必要性" class="headerlink" title="必要性"></a>必要性</h1><p>很多时候，项目成员都说没时间，这样就能用了，不关注非功能需求。但是又老遇到各种问题，系统很不稳定。</p>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><table>
+<thead>
+<tr>
+<th>问题</th>
+<th>所属类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>给客户现场演示，老是出现问题</td>
+<td>性能需求</td>
+</tr>
+<tr>
+<td>对比竞品，不好看</td>
+<td>观感需求</td>
+</tr>
+<tr>
+<td>XX功能，方案很NB。但是销售都不会用，产品内部也没几个人知道怎么用</td>
+<td>易用性需求</td>
+</tr>
+<tr>
+<td>APP请求了好多权限，客户要求给出说法。请求对应权限，是哪个功能要</td>
+<td>安全性需求</td>
+</tr>
+<tr>
+<td>后台采集定位，iOS上架难度大</td>
+<td>法律需求</td>
+</tr>
+</tbody></table>
+<p>当然，现场演示这种，基本都会出问题。但不能否认，必须确保性能。网络正常，5秒转不出来一个页面，肯定是存在问题的。</p>
+<h1 id="行动计划"><a href="#行动计划" class="headerlink" title="行动计划"></a>行动计划</h1><h2 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h2><table>
+<thead>
+<tr>
+<th>非功能性需求</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>观感</td>
+<td>预期的外观</td>
+</tr>
+<tr>
+<td>易用性</td>
+<td>基于预期用户的操作水平作出</td>
+</tr>
+<tr>
+<td>操作</td>
+<td>产品预期的操作环境</td>
+</tr>
+<tr>
+<td>性能</td>
+<td>多快、多大、多精确、多安全、多可靠等</td>
+</tr>
+<tr>
+<td>可维护、可移植</td>
+<td>产品的可改动性必须达到什么水平，例如增加一个功能</td>
+</tr>
+<tr>
+<td>安全性</td>
+<td>产品的安全性、保密性和完整性</td>
+</tr>
+<tr>
+<td>文化与政策</td>
+<td>人的因素</td>
+</tr>
+<tr>
+<td>法律需求</td>
+<td>满足适用的法律</td>
+</tr>
+</tbody></table>
+<p>以易用性为例子，讲一下怎么一步步消除技术成分：</p>
+<ol>
+<li>产品将使用一个鼠标</li>
+<li>产品将使用一种指点设备  </li>
+<li>产品将允许用户直接操作所有的界面元素</li>
+</ol>
+<h2 id="发现"><a href="#发现" class="headerlink" title="发现"></a>发现</h2><table>
+<thead>
+<tr>
+<th>是谁或是什么</th>
+<th>它们或它是否有以下需求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用户</td>
+<td>观感、易用性、安全性、文化/政策</td>
+</tr>
+<tr>
+<td>操作环境</td>
+<td>可操作性、性能、可维护性</td>
+</tr>
+<tr>
+<td>顾客、客户</td>
+<td>文化/政策</td>
+</tr>
+<tr>
+<td>相邻系统</td>
+<td>法律、可操作性、性能</td>
+</tr>
+</tbody></table>
+<p>以批量生成帐号为例，讲述下具体的发现过程：</p>
+<ol>
+<li><p>制造商的IT部相关人员，为经销商生成帐号（功能诉求1，制造商管理经销商帐号）</p>
 </li>
-<li><p>2个空瓶，可换1瓶汽水。喝掉1瓶，得到1个空瓶</p>
+<li><p>该行业，全国类型大企业，一般以省为单位设置一级经销商，也就30多个一级经销商（目标行业大背景）</p>
 </li>
-<li><p>最终是20+10+5+2+1+1=39瓶，且剩下一个空瓶</p>
+<li><p>考虑到部分制造商是区域型企业，某企业经销商数量将近一千（特殊场景）</p>
+</li>
+<li><p>一般系统上线，采用分批上线策略（具体策略）</p>
+</li>
+<li><p>为了用户的便利性（相关需求，易用性需求），需要支持批量生成帐号，一次300条记录（性能需求）</p>
 </li>
 </ol>
-<p><img src="http://i.chanpin100.com/156749007898623346" alt="img"></p>
-<p>整体来说就是分解问题，然后逐个穷举：</p>
-<ol>
-<li><p>用钱能买到多少瓶汽水，喝掉产生空瓶，这是直接运算能得到的。</p>
-</li>
-<li><p>空瓶基于规则换汽水，喝掉再产生空瓶，循环穷举计算</p>
-</li>
-</ol>
-<p>在现有场景下，很多人认为是可行的思路。甚至部分业务程序员，直接就这么编码，导致后期出现性能问题。20元需要1次计算和5次内部循环，下面我们来看看钱多一点的的场景</p>
-<h2 id="普通"><a href="#普通" class="headerlink" title="普通"></a>普通</h2><p>普通场景的规则是一致的，但是钱多了很多。问题描述如下：</p>
-<p>规则：喝汽水，1瓶汽水1元，集齐2个空瓶才能换一瓶汽水。</p>
-<p>前提：现在有2111元</p>
-<p>问题：到底可以喝多少瓶汽水</p>
-<p>2110转换成2进制，是100000111110。那么按照上面的方法，至少需要1次计算和11次循环（11次位移）。忽略其他的因素，耗时几乎翻倍。即便这个情况能解决，那么百万元呢？</p>
-<p>此时应该尝试去寻找规律，思路如下（我的高中数学老师应该会很开心）：</p>
-<ol>
-<li><p>利用数学理想，等价于寻找数字的规律（喝汽水瓶数）</p>
-</li>
-<li><p>列举出足够多的数字</p>
-</li>
-<li><p>尝试寻找规律</p>
-</li>
-<li><p>举例验证规律</p>
-</li>
-</ol>
-<p>这个场景中非常的简单，数列如下：</p>
-<p>1、3、5、7、9…</p>
-<p>通过数学归纳法，得到规律是2n-1。</p>
-<p>然后试试前面的20元，刚好是39。再试试13，也是25。</p>
-<p>即，n元能喝汽水瓶数：</p>
-<p>f(n) = 2n-1（n&gt;0）</p>
-<p>从算法维度来衡量，这个时间复杂程度就是O(1)，钱的大小不影响。</p>
-<h2 id="中等"><a href="#中等" class="headerlink" title="中等"></a>中等</h2><p>问题描述如下：</p>
-<p>规则：喝汽水，1瓶汽水6元，3个空瓶换一瓶汽水。</p>
-<p>前提：已知24元，可以喝6瓶汽水</p>
-<p>问题：为何可以喝6瓶？假设有x元，可以喝y瓶汽水？</p>
-<p>这个其实分为两个问题，第一个问题是第二个问题的先决条件。</p>
-<p>先按照分解问题穷举的思路，发现24元可买4瓶，喝4瓶-&gt;换1瓶并喝掉，剩下2空瓶。此时只有向老板借一瓶汽水，喝完有三个空瓶。将三个空瓶给老板，视为还一瓶汽水。所以，可以喝6瓶。</p>
-<p>第一个问题，让我们知道可以借瓶子。再延伸一下，就是空瓶是有价值的。</p>
-<p>利用等价转换法分析，可知道一份汽水的价值为4元，一个空瓶价值1元。</p>
-<p>所以，y = └x/4┘（x除以4的结果，向下取整）</p>
-<p>这里只讨论逻辑，上面的结论实际情况下是很可笑的。假如我刚好有4元，如下操作后可用可以喝到一瓶汽水：</p>
-<ol>
-<li><p>4元向老板买两个空瓶</p>
-</li>
-<li><p>再向老板借一瓶汽水喝掉，得到1个空瓶</p>
-</li>
-<li><p>3个空瓶给老板，兑换汽水，还给老板</p>
-</li>
-</ol>
-<h2 id="困难"><a href="#困难" class="headerlink" title="困难"></a>困难</h2><p>问题描述如下：</p>
-<p>规则：喝汽水，x元一瓶，现有促销搞活动：新批次的汽水，y个空瓶可以换一瓶汽水(x、y&gt;=1)。</p>
-<p>前提：汽水价格不因促销而有所变动，针对空瓶换的汽水，品牌商会对店老板进行补贴</p>
-<p>问题：店老板进货z瓶，品牌商实际应该给几瓶（补贴损失）（Z&gt;y）</p>
-<p>这个其实就是困难情况的一般化，继续使用等价转换法：</p>
-<p>一份汽水实际价值 =  x – x/y</p>
-<p>实际进货汽水总数 f(z) = └ z * x / (x-x/y) ┘</p>
-<p>汽水实际价格是原有价格的倍数（x / (x-x/y)），对应的进货量也要乘以对应的倍数。</p>
-<h2 id="极难"><a href="#极难" class="headerlink" title="极难"></a>极难</h2><p>前面，价格都是比较好算的1元，改为3元。问题描述如下：</p>
-<p>规则：喝汽水，1瓶汽水3元，集齐3个空瓶才能换一瓶汽水。</p>
-<p>前提：现在有n元</p>
-<p>问题：到底可以喝多少瓶汽水</p>
-<p>和前面类似，先列举出足够多的数据：</p>
-<p><img src="http://i.chanpin100.com/156750069470503883" alt></p>
-<p>如何寻找数字的规律，我认为数学的范畴。反正既然价格是3，就用3倍数进行表示，寻找规律。</p>
-<p>一般前面的数字，规律比较难找。以9为分界线（3*3=9,9以后才会出现空瓶换汽水），分段标出。所以规律总结，数学表达如下：</p>
-<p><img src="http://i.chanpin100.com/156750077575913156" alt></p>
-<p>数字分为奇数和偶数，应该可以继续优化，尝试用2的倍数来表达9以后的值：</p>
-<p><img src="http://i.chanpin100.com/156750071882811588" alt></p>
-<p>由于习惯，使用2n-1方式表达奇数。如果用前面的方法，规律不太明显。考虑到是为了从奇偶性角度简化计算，直接从n出发，转换为结果：</p>
-<p><img src="http://i.chanpin100.com/156750077008615680" alt="img"></p>
-<h2 id="地狱"><a href="#地狱" class="headerlink" title="地狱"></a>地狱</h2><p>问题描述如下：</p>
-<p>规则：喝汽水，x元一瓶，y个空瓶可以换一瓶汽水(x、y&gt;=1)。</p>
-<p>前提：现有n元（n&gt;=x）</p>
-<p>问题：如果可以借汽水，可以喝多少瓶汽水？如果不能，可以喝多少瓶？</p>
-<p>可以借汽水，就很简单了：</p>
-<p>一份汽水 = x – x/y</p>
-<p>可以喝汽水总数 f(n) = └ n/(x-x/y) ┘(向下取整)</p>
-<p>不能借汽水，就无法使用等价转换。参考上一个场景，规律如下：</p>
-<p><img src="http://i.chanpin100.com/156750087884421439" alt></p>
+<p>最终的需求描述很简单：批量生成经销商帐号，需要支持一次300条记录</p>
+<h2 id="明确定位"><a href="#明确定位" class="headerlink" title="明确定位"></a>明确定位</h2><p>非功能性需求也不是一概而论，需要结合产品的策略和所在行业，进行清晰的定位。</p>
+<p>举个例子，企业级的SaaS产品，面向消费品行业的销售人员，对应的非功能性需求评分如下（满分10分）：</p>
+<table>
+<thead>
+<tr>
+<th>非功能性需求</th>
+<th>评分</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>观感</td>
+<td>5</td>
+</tr>
+<tr>
+<td>易用性</td>
+<td>7</td>
+</tr>
+<tr>
+<td>操作</td>
+<td>6</td>
+</tr>
+<tr>
+<td>性能</td>
+<td>8</td>
+</tr>
+<tr>
+<td>可维护、可移植</td>
+<td>10</td>
+</tr>
+<tr>
+<td>安全性</td>
+<td>9</td>
+</tr>
+<tr>
+<td>文化与政策</td>
+<td>5</td>
+</tr>
+<tr>
+<td>法律需求</td>
+<td>8</td>
+</tr>
+</tbody></table>
+<p>假如是个金融相关的产品，法律需求肯定是10分的。以P2P为例，没有信用担保，始终就是存在法律风险的。即便有存管银行，银行只进行资金的监控，防止挪用，不进行信用担保。</p>
+<h2 id="解答迷津"><a href="#解答迷津" class="headerlink" title="解答迷津"></a>解答迷津</h2><table>
+<thead>
+<tr>
+<th>现状</th>
+<th>疑惑</th>
+<th>方案</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>产品使用了APP，要做各系统版本的兼容</td>
+<td>不知道市场上系统版本占有率</td>
+<td>善用国内报告</td>
+</tr>
+<tr>
+<td>APP端， 要做各机型的兼容</td>
+<td>不清楚哪些机型受欢迎</td>
+<td>BAT研究报告，国家互联网应急中心报告</td>
+</tr>
+<tr>
+<td>产品有Web端，要做浏览器的兼容</td>
+<td>大体知道有几款浏览器，但不清楚客户现有的浏览器主要是什么，也不知道各浏览器占比</td>
+<td>BAT研究报告，国家互联网应急中心报告</td>
+</tr>
+<tr>
+<td>销售使用笔记本演示系统，体验不好。要在大屏幕和小屏幕上，都保证基本的用户体验</td>
+<td>l仅仅知道1080P，2K以及笔记本屏幕这种通用概念，不清楚有哪些分辨率，也不知道对应占比</td>
+<td>BAT研究报告，国家互联网应急中心报告</td>
+</tr>
+<tr>
+<td>目前没关注性能需求，补充起来挺麻烦</td>
+<td>性能指标不清晰，每个都定义好麻烦</td>
+<td>参照业内标准，设置统一规范。如Web端3秒响应，APP端1.5秒响应。数据较多的页面，可以通过进度条、懒加载等方式进行优化</td>
+</tr>
+<tr>
+<td>要求产品简单易学，培训成本低</td>
+<td>无法界定，什么是简单易学</td>
+<td>一般是经过培训后，一定比例的用户，能在指定时间内，完成特定的任务</td>
+</tr>
+<tr>
+<td>非功能性需求描述很困难</td>
+<td>不知道这个非功能需求，是否可以实现，是否合理</td>
+<td>和开发经理保持沟通，或询问有经验的产品同事</td>
+</tr>
+</tbody></table>
+<h2 id="需求验证"><a href="#需求验证" class="headerlink" title="需求验证"></a>需求验证</h2><table>
+<thead>
+<tr>
+<th><strong>方面</strong></th>
+<th><strong>判断标准</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>功能性需求</td>
+<td>确保功能被正确地执行</td>
+</tr>
+<tr>
+<td>非功能性需求</td>
+<td>量化度量，引入该产品的3个月之内，60%的用户将用它来完整规定的工作。在这些用户之中，将有75%对产品表示赞许。</td>
+</tr>
+</tbody></table>
+<p>举个例子：</p>
+<p>描述：当未经培训的公众第一次尝试使用该产品的时候，它应该易于学习。</p>
+<p>理由：潜在用户可能从未使用过这类产品。</p>
+<p>验收标准：由业务人员组成的测试小组中，90%的人在第一次使用该产品的时候，能在45秒内成功地登录APP，进行考勤打卡。</p>
 
             </div>
             <hr/>
@@ -510,8 +667,8 @@
                 </a>
             </div>
             <br/>
-            <a  href="/2019/03/10/gui-lu-qi-shui-wen-ti/">
-                    《规律--汽水问题》
+            <a  href="/2018/08/21/fei-gong-neng-xing-xu-qiu/">
+                    《非功能性需求》
             </a> 由
             <a href="https://github.com/BakerHancockChen/BakerHancockChen.github.io">
                 Oliver
@@ -556,30 +713,30 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/03/15/gui-lu-kao-qin-wen-ti/">
+                <a href="/2018/09/18/xiao-cheng-xu-na-xie-shi-qian-yan/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/finger-2056030_640.jpg" class="responsive-img" alt="规律--考勤问题">
+                        <img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/action-audience-celebration-3052306.jpg" class="responsive-img" alt="小程序那些事--前言">
                         
-                        <span class="card-title">规律--考勤问题</span>
+                        <span class="card-title">小程序那些事--前言</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            考勤问题的错误示范
+                            讲述研究小程序的意义
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-03-15
+                            <i class="far fa-clock fa-fw icon-date"></i>2018-09-18
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/通用知识/" class="post-category">
-                                    通用知识
+                            <a href="/categories/微信/" class="post-category">
+                                    微信
                                 </a>
                             
                             
@@ -589,8 +746,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/有效思考/">
-                        <span class="chip bg-color">有效思考</span>
+                    <a href="/tags/小程序/">
+                        <span class="chip bg-color">小程序</span>
                     </a>
                     
                 </div>
@@ -604,30 +761,30 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/03/09/you-xiao-si-kao-gui-lu/">
+                <a href="/2017/06/10/rem-tu-xiang-shi-bie-shi-chang-fen-xi/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/aisle-archive-bookcase-256559.jpg" class="responsive-img" alt="有效思考--规律">
+                        <img src="https://cdn.jsdelivr.net/gh/BakerHancockChen/ImgHosting/img/alexander-sinn-KgLtFCgfC28-unsplash.jpg" class="responsive-img" alt="REM图像识别市场分析">
                         
-                        <span class="card-title">有效思考--规律</span>
+                        <span class="card-title">REM图像识别市场分析</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            兵无常势，水无常形？天行有常，不为尧存，不为桀亡！
+                            REM图像识别定义
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-03-09
+                                <i class="far fa-clock fa-fw icon-date"></i>2017-06-10
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/通用知识/" class="post-category">
-                                    通用知识
+                            <a href="/categories/AI/" class="post-category">
+                                    AI
                                 </a>
                             
                             
@@ -637,8 +794,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/有效思考/">
-                        <span class="chip bg-color">有效思考</span>
+                    <a href="/tags/图像识别/">
+                        <span class="chip bg-color">图像识别</span>
+                    </a>
+                    
+                    <a href="/tags/市场分析/">
+                        <span class="chip bg-color">市场分析</span>
                     </a>
                     
                 </div>
